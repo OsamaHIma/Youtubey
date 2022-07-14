@@ -1,0 +1,206 @@
+/* Costmizing selection */
+::selection{
+    color:white;
+    background:rgb(247, 9, 172);
+}
+/* Definng main the wep color*/
+
+:root{
+    --bink: #bf40bf;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* Importing fonts */
+
+@font-face {
+    font-family: cairo;
+    src: url('../fonts/static/Cairo-Regular.ttf');
+}
+@font-face {
+    font-family: Poppins;
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+
+/* Appling fonts */
+
+*{
+    font-family: 'cairo', Poppins;
+    scroll-behavior: smooth;
+}
+
+/* Change card bg-color on hover */
+
+.card-hover{
+    transition: .2s all ease-in-out;
+}
+
+.card-hover:hover{
+    background:#c7c7c7;
+}
+
+/* Removing underline from a tags and adding colors */
+
+a{
+    text-decoration: none !important;
+    color: #333 !important;
+}
+
+/* Definning new classes */
+
+.bg-pinkey{
+    background: var(--bink)!important;
+}
+
+.text-pink{
+    color: var(--bink) !important;
+}
+
+/* normal styling */
+
+.social-media{
+    bottom: 1em ;
+    left: 1.7em ;
+}
+
+.badge{
+    padding: 7px;
+    padding-right: 9px;
+    padding-left: 16px;
+    box-shadow: 5px 6px 6px 2px #e9ecef !important;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .active>.nav-link
+{
+    border-radius: .2em !important;
+    color: white !important;
+    background-color: var(--bink) !important;
+}
+
+button{
+    background-color: transparent !important;
+    color: var(--bink) !important;
+    border-color: var(--bink) !important;
+}
+
+button:hover{
+    color: white !important;
+    background-color: var(--bink) !important;
+}
+input.form-control:focus,button:focus{
+    box-shadow: none !important;
+}
+time{
+    direction: ltr !important;
+}
+.card, .card-icons .fa-play{
+    transition: .3s all ease-in-out;
+}
+.card:hover .hover-icon{
+    display: inline !important;
+}
+.card:hover{
+    transform: translateY(-3%);
+}
+
+.sidebar{
+    right: -17rem;
+    position:fixed;
+    z-index: 4;
+    transition: .4s all ease-in-out;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 5em;
+}
+.sidebar:hover{
+    overflow-y: scroll;
+}
+.sidebar .list-group-item:hover{
+    color: white !important;
+    background-color: var(--bink);
+}
+
+.sidebar .list-group-item:hover .text-pink{
+    color:aliceblue !important;
+}
+.sidebar .list-group-item{
+    width: 17rem;
+}
+
+#wrap.toggled .sidebar{
+    right: 0rem;
+}
+.sidebar::-webkit-scrollbar{
+    background-color: #c7c7c7;
+    width: .5em;
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+    background-color: #989898;
+    width: .5em;
+}
+
+.layer{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.626);
+    z-index: 3;
+    display: none;
+}
+
+.navbar .search-icon{
+    cursor: pointer;
+    padding: 1em .8em;
+    top: 1em;
+    left: 1.25em;
+}
+
+.navbar .search-icon:hover{
+    background-color: var(--bink);
+    color: white !important;
+}
+.s-search{
+    position: fixed;
+    top: 5em;
+    background-color: #c8c8c8 !important;
+    z-index: 1;
+    border: none !important;
+    padding: 0.375em 1.4375em;
+    height: 3em;
+}
+.s-search:focus{
+    color: white !important;
+    background-color: #bf40bf6d !important;
+}
+.card .card-body p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+@media (max-width: 1038px){
+    .navbar .collapse .search-form{
+        display: none !important;
+    }
+    .navbar .search-icon{
+        display: inline !important;
+    }
+    
+}
+
+@media (min-width: 1038px){
+    .s-search{
+        display: none !important;
+    }
+}
+
+@media (max-width: 988px){
+    .navbar .navbar-brand{
+        float:right !important;
+    }
+}

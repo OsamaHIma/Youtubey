@@ -1,0 +1,20 @@
+.line , .card-inner p{
+    overflow: visible !important;
+    white-space: normal !important;
+}
+.watch-card{
+    min-height: 24rem;
+}
+.no-hover:hover{
+    transform: none !important;
+}
+
+.fa-heart{
+    color: red !important;
+}
+
+@media (max-width: 558px){
+    .replay-time{
+        font-size: 11px !important;
+    }
+}

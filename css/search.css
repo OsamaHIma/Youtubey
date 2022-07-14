@@ -1,0 +1,21 @@
+#search-filters-icon{
+    cursor: pointer;
+}
+
+#search-filters-icon:hover{
+    color:#bf40bf;
+}
+.search-header .filter-column{
+    display: none;
+}
+
+input:checked+span{
+    color: #bf40bf;
+}
+
+
+
+.card .card-body .card-text2{
+    overflow: hidden;
+    white-space: nowrap;
+}
